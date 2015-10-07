@@ -74,5 +74,15 @@ public class FallingLevel {
 			return false;
 		}
 	}
+	
+	public Rectangle getRect2()
+	{
+		return new Rectangle (50 + temp + gapSize, y, 500 - temp - gapSize, height);
+	}
+	
+	public Rectangle getRightRectLeftSide()
+	{
+		return new Rectangle(50 + temp + gapSize, y, 5 , height);
+	}
 
 }

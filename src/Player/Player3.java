@@ -2,6 +2,7 @@ package Player;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.awt.geom.Line2D;
 
 
 public class Player3 extends Player{
@@ -14,6 +15,11 @@ public class Player3 extends Player{
 	
 	public Rectangle getRectBounds() {
 		return (new Rectangle(x, y, width, height));
+	}
+	
+	public Rectangle getRightSide()
+	{
+		return new Rectangle(x + width, y+10, 5 , height-10);
 	}
 	
 	public void draw(Graphics g2)
